@@ -1,0 +1,230 @@
+          // @media (min-width: $xs-width) {
+          .how-works {
+            padding-top: 25px;
+          }
+          
+          .content-title {
+            position: relative;
+            right: 3px;
+            text-align: center;
+            font-size: $font-size--h3;
+            color: $text-color-heading;
+            margin-bottom: 15px;
+            margin-top: 0;
+          }
+          
+          .slider {
+            display: inline-block;
+            vertical-align: top;
+            //        outline: 1px solid #000;
+            width: 100%;
+            height: 400px;
+            margin-right: 0;
+            margin-bottom: 10px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+          
+          //=================slider==================
+          #js-slidr,
+          #js-slidr1,
+          #js-slidr2 {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+          }
+          
+          #js-slidr > div,
+          #js-slidr1 > div,
+          #js-slidr2 > div {
+            width: 100%;
+            height: 100%;
+            padding: 0 20px;
+            color: $white;
+          }
+          
+          .switch {
+            position: fixed;
+            top: 0;
+            left: 0;
+          }
+          
+          aside[id="js-slidr-control"] .slidr-control.right::after,
+          aside[id="js-slidr1-control"] .slidr-control.right::after,
+          aside[id="js-slidr2-control"] .slidr-control.right::after {
+            width: 0px;
+            height: 0px;
+            content: "";
+            position: absolute;
+            right: 10px!important;
+            top: 35%!important;
+            margin-top: -8px;
+            border-width: 8px 12px 8px 10px;
+            border-style: solid;
+            border-color: transparent !important;
+            border-image: initial;
+            width: 45px!important;
+            height: 65px!important;
+            background: url(../img/arrow-right.png) no-repeat!important;
+            //    background-position: -68px -11px !important;
+          }
+          
+          aside[id="js-slidr-control"] .slidr-control.left::after,
+          aside[id="js-slidr1-control"] .slidr-control.left::after,
+          aside[id="js-slidr2-control"] .slidr-control.left::after {
+            width: 0px;
+            height: 0px;
+            content: "";
+            position: absolute;
+            left: 0px!important;
+            top: 35%!important;
+            margin-top: -8px;
+            border-width: 8px 12px 8px 10px;
+            border-style: solid;
+            border-color: transparent !important;
+            border-image: initial;
+            width: 45px!important;
+            height: 65px!important;
+            background: url(../img/arrow-left.png) no-repeat!important;
+            //    background-position: -14px -11px !important;
+          }
+          
+          aside[id="js-slidr-control"] .slidr-control.up::after,
+          aside[id="js-slidr-control"] .slidr-control.down::after,
+          aside[id="js-slidr1-control"] .slidr-control.up::after,
+          aside[id="js-slidr1-control"] .slidr-control.down::after,
+          aside[id="js-slidr2-control"] .slidr-control.up::after,
+          aside[id="js-slidr2-control"] .slidr-control.down::after {
+            display: none !important;
+          }
+          
+          .slide {
+            &__btn {
+              padding: 1px 10px;
+              font-size: 10px;
+              font-weight: 100;
+              line-height: 1;
+              text-transform: uppercase;
+              margin-top: 220px;
+              width: auto;
+              &:hover {
+                padding: 1px 10px;
+              }
+            }
+            &__img {
+              position: absolute;
+              left: 0;
+              z-index: -10;
+            }
+            &__title {
+              font-size: $font-size--h2;
+              font-family: $font-family--mont;
+              margin-top: 15px;
+              margin-bottom: 15px;
+            }
+            &__text {
+              font-size: $font-size;
+              font-family: $font-family--roboto;
+              color: #ccc;
+            }
+          }
+          
+          @media (min-width: $sm-width) {
+            .how-works {
+              padding-top: 94px;
+            }
+            .content-title {
+              margin-bottom: 35px;
+            }
+            .slider {
+              width: 31%;
+              margin-right: 2.5%;
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+            aside[id="js-slidr-control"] .slidr-control.right::after,
+            aside[id="js-slidr1-control"] .slidr-control.right::after,
+            aside[id="js-slidr2-control"] .slidr-control.right::after {
+              width: 0px;
+              height: 0px;
+              content: "";
+              position: absolute;
+              right: 20px!important;
+              top: 20%!important;
+              margin-top: -8px;
+              border-width: 8px 12px 8px 10px;
+              border-style: solid;
+              border-color: transparent !important;
+              border-image: initial;
+              width: 45px!important;
+              height: 65px!important;
+              background: url(../img/arrow-right.png) no-repeat!important;
+              //    background-position: -68px -11px !important;
+            }
+            aside[id="js-slidr-control"] .slidr-control.left::after,
+            aside[id="js-slidr1-control"] .slidr-control.left::after,
+            aside[id="js-slidr2-control"] .slidr-control.left::after {
+              width: 0px;
+              height: 0px;
+              content: "";
+              position: absolute;
+              left: 20px!important;
+              top: 20%!important;
+              margin-top: -8px;
+              border-width: 8px 12px 8px 10px;
+              border-style: solid;
+              border-color: transparent !important;
+              border-image: initial;
+              width: 45px!important;
+              height: 65px!important;
+              background: url(../img/arrow-left.png) no-repeat!important;
+              //    background-position: -14px -11px !important;
+            }
+          }
+          
+          @media (min-width: $lg-width) {
+            .slider {
+              margin-right: 3%;
+            }
+            aside[id="js-slidr-control"] .slidr-control.right::after,
+            aside[id="js-slidr1-control"] .slidr-control.right::after,
+            aside[id="js-slidr2-control"] .slidr-control.right::after {
+              width: 0px;
+              height: 0px;
+              content: "";
+              position: absolute;
+              right: 10px!important;
+              top: 35%!important;
+              margin-top: -8px;
+              border-width: 8px 12px 8px 10px;
+              border-style: solid;
+              border-color: transparent !important;
+              border-image: initial;
+              width: 45px!important;
+              height: 65px!important;
+              background: url(../img/arrow-right.png) no-repeat!important;
+              //    background-position: -68px -11px !important;
+            }
+            aside[id="js-slidr-control"] .slidr-control.left::after,
+            aside[id="js-slidr1-control"] .slidr-control.left::after,
+            aside[id="js-slidr2-control"] .slidr-control.left::after {
+              width: 0px;
+              height: 0px;
+              content: "";
+              position: absolute;
+              left: 0px!important;
+              top: 35%!important;
+              margin-top: -8px;
+              border-width: 8px 12px 8px 10px;
+              border-style: solid;
+              border-color: transparent !important;
+              border-image: initial;
+              width: 45px!important;
+              height: 65px!important;
+              background: url(../img/arrow-left.png) no-repeat!important;
+              //    background-position: -14px -11px !important;
+            }
+          }

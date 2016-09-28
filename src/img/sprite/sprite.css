@@ -1,0 +1,24 @@
+.icon-partner1-1 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-partner2-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -33px 0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-partner3-1 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -33px;
+  width: 33px;
+  height: 32px;
+}
+.icon-partner4-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -66px 0px;
+  width: 33px;
+  height: 32px;
+}

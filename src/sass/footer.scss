@@ -1,0 +1,83 @@
+      .main-footer {
+        text-align: center;
+        border-top: 5px solid $red;
+        margin-top: 40px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        &__title {
+          color: $text-color-heading;
+          font-weight: 700;
+          text-decoration: none;
+        }
+        &__partner {
+          display: inline-block;
+          margin-bottom: 15px;
+        }
+        &__lists {
+          list-style: none;
+          padding: 0;
+        }
+        &__list {
+          display: inline-block;
+        }
+        &__link {
+          color: $text-color;
+          font-family: $font-family--roboto;
+          text-decoration: none;
+          padding: 0 7px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      
+      .logo--red {
+        float: none;
+      }
+      
+      .logo__link--red {
+        color: $red;
+        font-size: 16px;
+      }
+      
+      @media (min-width: $sm-width) {
+        .main-footer {
+          margin-top: 89px;
+          padding-bottom: 20px;
+          padding-top: 22px;
+          &__partners {
+            display: inline-block;
+            vertical-align: top;
+            width: 20%;
+          }
+          &__lists {
+            list-style: none;
+            padding: 0;
+            margin-top: -5px;
+            margin-left: -6px;
+          }
+          &__list {
+            display: block;
+            padding: 3px 0;
+            text-align: left;
+          }
+          &__company {
+            float: left;
+            margin: 0 0 0 60px;
+          }
+          &__partner {
+            float: left;
+            margin: 14px 0 0 93px;
+          }
+        }
+        .areto {
+          float: right;
+          margin-top: 17px;
+        }
+        .logo--red {
+          float: left;
+          position: relative;
+          top: 6px;
+          left: -18px;
+        }
+      }

@@ -1,0 +1,16 @@
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+  width: 280px/$xs-width*100%;
+  @media (min-width: $sm-width) {
+    width: 735px/$sm-width*100%;
+  }
+  @media (min-width: $md-width) {
+    width: 940px;
+    //    width: 940px/$md-width*100%;
+  }
+//    @media (min-width: $lg-width) {
+  //    width: 940px/$lg-width*100%;
+  //  }
+}
