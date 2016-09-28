@@ -116,7 +116,7 @@ function getJson(word) {
 }
 //console.log(request);
 
-getJson('cat');
+getJson('n/a');
 
 function someFunc(e) {
   e.preventDefault();
