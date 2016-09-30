@@ -58,3 +58,5 @@ gulp.task('gulp-cssmin', function () {
 
   .pipe(gulp.dest('build/css'));
 });
+
+gulp.task('default', ['gulp-autoprefixer', 'gulp-autoprefixer', 'gulp-imagemin', 'gulp-uglify', 'gulp-cssmin', "gulp-spritesmith", 'watch']);
