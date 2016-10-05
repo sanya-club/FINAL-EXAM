@@ -66,7 +66,7 @@
     &__result {
       height: 968px;
       margin-bottom: 96px;
-      padding-left: 30px;
+      padding-left: 1px;
     }
     &__form__submit {
       width: auto;
@@ -75,7 +75,7 @@
       outline: 0;
     }
     &__form__input {
-      padding: 12px 30px 9px 15px;
+      padding: 12px 0px 9px 15px;
       border: 1px solid #ccc;
       border-radius: 3px;
       width: 26%;
@@ -87,7 +87,7 @@
     &__text {
       position: relative;
       top: -3px;
-      left: -3px;
+      left: 6px;
     }
   }
   .grid-item {

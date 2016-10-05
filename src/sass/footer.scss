@@ -63,7 +63,7 @@
           }
           &__company {
             float: left;
-            margin: 0 0 0 60px;
+            margin: 0 0 0 94px;
           }
           &__partner {
             float: left;
@@ -73,11 +73,13 @@
         .areto {
           float: right;
           margin-top: 17px;
+          position: relative;
+          left: 8px;
         }
         .logo--red {
           float: left;
           position: relative;
           top: 6px;
-          left: -18px;
+          left: -1px;
         }
       }
