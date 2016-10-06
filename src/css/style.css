@@ -502,7 +502,7 @@ th {
 
 .content-title {
   position: relative;
-  right: 3px;
+  right: -7px;
   text-align: center;
   font-size: 22px;
   color: #333333;
