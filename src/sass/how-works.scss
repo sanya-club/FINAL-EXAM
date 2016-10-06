@@ -58,7 +58,7 @@
             height: 0px;
             content: "";
             position: absolute;
-            right: 10px!important;
+            right: -15px!important;
             top: 35%!important;
             margin-top: -8px;
             border-width: 8px 12px 8px 10px;
@@ -137,7 +137,6 @@
             }
             .content-title {
               margin-bottom: 35px;
-              right: -6px;
             }
             .slider {
               width: 31%;
@@ -153,7 +152,7 @@
               height: 0px;
               content: "";
               position: absolute;
-              right: 20px!important;
+              right: 0px!important;
               top: 20%!important;
               margin-top: -8px;
               border-width: 8px 12px 8px 10px;
@@ -188,8 +187,7 @@
           
           @media (min-width: $lg-width) {
             .slider {
-              margin-right: 1%;
-              margin-left: 1%
+              margin-right: 3%;
             }
             aside[id="js-slidr-control"] .slidr-control.right::after,
             aside[id="js-slidr1-control"] .slidr-control.right::after,
@@ -198,7 +196,7 @@
               height: 0px;
               content: "";
               position: absolute;
-              right: 10px!important;
+              right: -15px!important;
               top: 35%!important;
               margin-top: -8px;
               border-width: 8px 12px 8px 10px;
