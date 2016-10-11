@@ -83,22 +83,29 @@ var s = slidr.create('js-slidr2', {
   .start().auto();
 
 
+
+
+
 var request = new XMLHttpRequest();
 
 function getJson(word) {
-  request.open('GET', 'https://api.riffsy.com/v1/search?key=LIVDSRZULELA&tag=' + word + '&limit=7');
+  request.open('GET', 'https://api.riffsy.com/v1/search?key=LIVDSRZULELA&tag=' + word + '&limit=8');
   request.onreadystatechange = function () {
     if (request.status === 200 && request.readyState === 4) {
       var resText = JSON.parse(request.responseText);
 
 
-      for (i = 0; i < 7; i++) {
-        var imgSrc = resText.results[i].url
-        var imgTitle = resText.results[i].title
+      for (i = 0; i < 8; i++) {
+        var imgSrc = resText.results[i].url;
+        var imgTitle = resText.results[i].title;
+        var imgWidth = resText.results[i].media[0].gif.dims[0];
+        var imgHeight = resText.results[i].media[0].gif.dims[1];
 
         console.log(imgSrc);
         var grid = document.querySelectorAll('.grid-item');
         grid[i].innerHTML = '<span class="img__title">' + imgTitle + '</span><img src="' + imgSrc + '">';
+        //        grid[i].setAttribute('style', 'height: ' + imgHeight + 'px; width:' + imgWidth + 'px;');
+        //        grid[i].setAttribute('style', 'width: ' + imgWidth + 'px; height: ' + imgHeight + 'px');
 
         //        grid[i].innerHTML = '<img src="' + imgSrc + '">';
 
@@ -122,10 +129,19 @@ function someFunc(e) {
   e.preventDefault();
   //  document.querySelector('.grid').innerHTML = '';
 
+
   var inputVal = document.getElementById("search").value;
 
 
   getJson(inputVal);
+  setTimeout(function () {
+    var msnry = new Masonry(".grid", {
+      itemSelector: ".grid-item",
+      columnWidth: ".grid-item",
+      gutter: 10
+
+    });
+  }, 2000);
 }
 var submit = document.querySelector(".discover__form__submit");
 submit.addEventListener('click', someFunc);
@@ -135,12 +151,14 @@ submit.addEventListener('click', someFunc);
 
 
 //=================masonry=======================
-var msnry = new Masonry(".grid", {
-  itemSelector: ".grid-item",
-  columnWidth: ".grid-item"
+setTimeout(function () {
+  var msnry = new Masonry(".grid", {
+    itemSelector: ".grid-item",
+    columnWidth: ".grid-item",
+    gutter: 10
 
-});
-
+  });
+}, 2000);
 
 
 

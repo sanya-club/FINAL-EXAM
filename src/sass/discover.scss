@@ -4,6 +4,7 @@
   &__result {
     min-height: 905px;
     //    outline: 1px solid #000;
+    //    overflow: hidden;
     margin-bottom: 40px;
   }
   &__text {
@@ -30,25 +31,28 @@
 
 .grid-item {
   width: 100%;
-  height: 120px;
-  margin: 10px 0;
+  //  height: 120px;
+  //  margin: 10px 0;
 }
 
+//
 .grid-item--w2 {
   width: 100%;
-  height: 120px;
+  //  height: 120px;
   margin: 10px 0;
-  margin-right: 0;
+  //  margin-right: 0;
 }
 
+//
 .grid-item img {
   width: 100%;
-  height: 120px;
+  //  height: 120px;
 }
 
+//
 .grid-item--w2 img {
   width: 100%;
-  height: 100%;
+  //  height: 100%;
 }
 
 .img__title {
@@ -64,7 +68,8 @@
   .discover {
     padding-top: 96px;
     &__result {
-      height: 968px;
+      min-height: 685px;
+      //      overflow: hidden;
       margin-bottom: 96px;
       padding-left: 1px;
     }
@@ -93,26 +98,26 @@
   .grid-item {
     //    float: left;
     width: 30%;
-    height: 315px;
-    margin: 10px;
+    //    height: 315px;
+    margin: 1%;
   }
   .grid-item--w2 {
     //    float: left;
-    width: 62%;
-    height: 315px;
-    margin: 10px;
-    margin-right: 0;
+    width: 60%;
+    //    height: 315px;
+    //    margin: 10px;
+    //    margin-right: 0;
   }
   .grid-item img {
     //    float: left;
     width: 100%;
-    height: 315px;
+    //    height: 315px;
     //    margin: 5px;
   }
   .grid-item--w2 img {
     //    float: left;
     width: 100%;
-    height: 315px;
+    //    height: 315px;
     //    margin: 5px;
   }
 }

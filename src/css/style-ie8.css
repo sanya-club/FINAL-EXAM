@@ -5,6 +5,7 @@
 .main-header {
   height: 700px;
   padding-top: 38px;
+  /*  margin: 0;*/
 }
 
 .main-header__title {
@@ -19,10 +20,12 @@
 .logo {
   float: left;
   padding-top: 8px;
+  /*  margin: 0;*/
   /*      margin-left: -2px;*/
 }
 
 .login {
+  margin: 0;
   float: right;
   margin-right: 2px;
 }
@@ -90,14 +93,14 @@
 .grid-item {
   float: left;
   width: 30%;
-  height: 315px;
+  /*  height: 315px;*/
   margin: 10px;
 }
 
 .grid-item--w2 {
   float: left;
-  width: 62%;
-  height: 315px;
+  width: 60%;
+  /*  height: 315px;*/
   margin: 10px;
   margin-right: 0;
 }
