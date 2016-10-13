@@ -20,7 +20,7 @@ var s = slidr.create('js-slidr', {
 
   })
   .add('h', ['one', 'two', 'three', 'one']) // loops the first three slides
-  .add('h', ['four', 'five', 'six', 'four']) // loops the next three slides
+  //.add('h', ['four', 'five', 'six', 'four']) // loops the next three slides
   //  .add('v', ['one', 'four', 'one']) // moves between the two sets of slides
   //.add('v', ['two', 'five', 'two'])
   //.add('v', ['three', 'six', 'three'])// allows vertical sliding across all slides
@@ -48,7 +48,7 @@ var s = slidr.create('js-slidr1', {
 
   })
   .add('h', ['one', 'two', 'three', 'one']) // loops the first three slides
-  .add('h', ['four', 'five', 'six', 'four']) // loops the next three slides
+  //  .add('h', ['four', 'five', 'six', 'four']) // loops the next three slides
   //  .add('v', ['one', 'four', 'one']) // moves between the two sets of slides
   //.add('v', ['two', 'five', 'two'])
   //.add('v', ['three', 'six', 'three'])// allows vertical sliding across all slides
@@ -76,7 +76,7 @@ var s = slidr.create('js-slidr2', {
 
   })
   .add('h', ['one', 'two', 'three', 'one']) // loops the first three slides
-  .add('h', ['four', 'five', 'six', 'four']) // loops the next three slides
+  //  .add('h', ['four', 'five', 'six', 'four']) // loops the next three slides
   //  .add('v', ['one', 'four', 'one']) // moves between the two sets of slides
   //.add('v', ['two', 'five', 'two'])
   //.add('v', ['three', 'six', 'three'])// allows vertical sliding across all slides
@@ -93,9 +93,9 @@ function getJson(word) {
   request.onreadystatechange = function () {
     if (request.status === 200 && request.readyState === 4) {
       var resText = JSON.parse(request.responseText);
+      console.log(resText.next);
 
-
-      for (i = 0; i < 8; i++) {
+      for (i = 0; i < resText.next; i++) {
         var imgSrc = resText.results[i].url;
         var imgTitle = resText.results[i].title;
         var imgWidth = resText.results[i].media[0].gif.dims[0];
@@ -124,6 +124,8 @@ function getJson(word) {
 //console.log(request);
 
 getJson('n/a');
+var grid = document.querySelector('.grid');
+grid.setAttribute('style', 'display: none');
 
 function someFunc(e) {
   e.preventDefault();
@@ -135,6 +137,7 @@ function someFunc(e) {
 
   getJson(inputVal);
   setTimeout(function () {
+    grid.setAttribute('style', 'display: block');
     var msnry = new Masonry(".grid", {
       itemSelector: ".grid-item",
       columnWidth: ".grid-item",
@@ -152,13 +155,36 @@ submit.addEventListener('click', someFunc);
 
 //=================masonry=======================
 setTimeout(function () {
+  var grid = document.querySelector('.grid');
+  grid.setAttribute('style', 'display: block');
   var msnry = new Masonry(".grid", {
     itemSelector: ".grid-item",
     columnWidth: ".grid-item",
     gutter: 10
 
   });
-}, 2000);
+}, 4000);
+
+//var grid = document.querySelector('.grid');
+//
+//var msnry = new Masonry(grid, {
+//  itemSelector: '.grid-item',
+//  columnWidth: '.grid-item',
+//  isAnimated: true,
+//  animationOptions: {
+//    duration: 500
+//  },
+//  percentPosition: true
+//});
+//
+//// imagesLoaded( grid ).on( 'progress', function() {
+////   msnry.layout();
+//// });
+//
+//imagesLoaded(grid, function () {
+//  msnry = new Masonry(grid);
+//  msnry.layout();
+//});
 
 
 

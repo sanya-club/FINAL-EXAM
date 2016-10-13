@@ -833,7 +833,7 @@ aside[id="js-slidr2-control"] .slidr-control.down::after {
     border: 1px solid #ccc;
     border-radius: 3px;
     width: 89%;
-    color: #ccc;
+    color: #000;
     margin-bottom: 10px; }
 
 .grid-item {

@@ -4,7 +4,7 @@
 
 .main-header {
   height: 700px;
-  padding-top: 38px;
+  padding-top: 0px;
   /*  margin: 0;*/
 }
 
@@ -19,15 +19,21 @@
 
 .logo {
   float: left;
-  padding-top: 8px;
+  padding-top: 38px;
   /*  margin: 0;*/
   /*      margin-left: -2px;*/
 }
 
 .login {
+  padding-top: 38px;
   margin: 0;
   float: right;
   margin-right: 2px;
+  margin-bottom: 115px;
+}
+
+.main-header__wrap {
+  /*  padding-top:*/
 }
 
 .btn {
@@ -100,19 +106,19 @@
 .grid-item--w2 {
   float: left;
   width: 60%;
-  /*  height: 315px;*/
   margin: 10px;
   margin-right: 0;
+  /*  height: 315px;*/
 }
 
 .grid-item img {
   width: 100%;
-  height: 315px;
+  /*  height: 315px;*/
 }
 
 .grid-item--w2 img {
   width: 100%;
-  height: 315px;
+  /*  height: 315px;*/
 }
 
 .main-footer {
