@@ -144,7 +144,7 @@ function someFunc(e) {
       gutter: 10
 
     });
-  }, 2000);
+  }, 6000);
 }
 var submit = document.querySelector(".discover__form__submit");
 submit.addEventListener('click', someFunc);
@@ -163,7 +163,7 @@ setTimeout(function () {
     gutter: 10
 
   });
-}, 4000);
+}, 6000);
 
 //var grid = document.querySelector('.grid');
 //
